@@ -1,0 +1,24 @@
+Some simple scripts for asterisk
+
+1. createExt.sh
+Usage:
+	./createExt.sh start_ext total_num config_file
+
+	such as: 
+	./createExt.sh 6001 600 /ext/asterisk/sip.conf
+
+	result:
+	[general]
+	context=default
+
+	[6001]
+	type=friend
+	...
+	...
+
+	[6600]
+	type=friend
+	...
+	...
+
+2. 
